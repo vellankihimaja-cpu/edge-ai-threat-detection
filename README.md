@@ -7,15 +7,37 @@ This project implements an Edge AI-based intrusion detection system for cloud-co
 
 ## Architecture
 
-User Input  
-↓  
-FastAPI Edge Service (ML Model Inference)  
-↓  
-Prediction Generated  
-↓  
-Elasticsearch Index (edge-alerts)  
-↓  
-Kibana Visualization  
+---
+
+## Architecture Diagram
+
+                +-------------------+
+                |   Client Request  |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |  FastAPI Edge API |
+                |  (ML Inference)   |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |  ML Model (sklearn)
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |  Elasticsearch    |
+                |   edge-alerts     |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |     Kibana        |
+                |   Visualization   |
+                +-------------------+
+  
 
 ---
 

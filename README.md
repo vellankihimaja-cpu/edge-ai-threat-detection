@@ -44,7 +44,6 @@ Python Dependencies:
 
 1. Clone repository:
 
-```bash
 git clone https://github.com/vellankihimaja-cpu/edge-ai-threat-detection.git
 cd edge-ai-threat-detection
 
